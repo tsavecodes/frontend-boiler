@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+html {
+}
+body {
+}
+body,
+html {
+  min-height: 100vh;
+  overflow: hidden;
+}

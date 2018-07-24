@@ -1,0 +1,39 @@
+//----------------------------------*\
+// SCSS MIXINS
+//----------------------------------*/
+
+@import "mixins/_position.scss";
+
+//----------------------------------*\
+// CONFIG MODULES
+//----------------------------------*/
+
+// Config modules
+@import "modules/_reset.scss";
+@import "modules/_vars.scss";
+@import "modules/_clearfix.scss";
+@import "modules/_defaults.scss";
+
+@import "modules/_global.scss";
+@import "modules/_typography.scss";
+
+//----------------------------------*\
+// PARTIALS
+//----------------------------------*/
+
+@import "partials/_header.scss";
+@import "partials/_main.scss";
+@import "partials/_footer.scss";
+
+@import "partials/_index.scss";
+
+//----------------------------------*\
+// MEDIA QUERIES
+//----------------------------------*/
+
+@import "modules/_breakpoints.scss";
+@import "modules/_print.scss";
+
+//----------------------------------*\
+// VENDOR
+//----------------------------------*/

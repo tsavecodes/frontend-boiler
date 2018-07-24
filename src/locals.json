@@ -1,0 +1,15 @@
+{
+  "title": "Frontend Boilerplate",
+  "headerNav": [
+    { "title": "Home", "href": "/home" },
+    { "title": "About", "href": "/about" },
+    { "title": "Contact", "href": "/contact" }
+  ],
+  "footerNav": [
+    { "title": "Home", "href": "/home" },
+    { "title": "About", "href": "/about" },
+    { "title": "Contact", "href": "/contact" },
+    { "title": "Terms", "href": "/terms" }
+  ],
+  "gaID": "UA-XXXXX-Y"
+}
