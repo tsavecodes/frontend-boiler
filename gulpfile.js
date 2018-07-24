@@ -13,8 +13,6 @@ var gulp = require("gulp"),
   fs = require("fs"),
   pug = require("gulp-pug");
 
-const LOCALS = JSON.parse(fs.readFileSync("./src/locals.json"));
-
 var banner = [
   "/*!\n" +
     " * <%= package.name %>\n" +
@@ -64,6 +62,8 @@ gulp.task("js", function() {
 });
 
 gulp.task("templates", function buildHTML() {
+  var LOCALS = JSON.parse(fs.readFileSync("./src/locals.json"));
+
   return gulp
     .src("src/templates/*.pug")
     .pipe(pug({ locals: LOCALS, pretty: true }))
