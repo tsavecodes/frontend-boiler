@@ -80,9 +80,8 @@ gulp.task("images", function() {
 
 gulp.task("browser-sync", function() {
   browserSync.init(null, {
-    server: {
-      baseDir: "app"
-    }
+    server: "./app",
+    open: false
   });
 });
 gulp.task("bs-reload", function() {
@@ -97,7 +96,8 @@ gulp.task(
     gulp.watch("src/js/*.js", ["js"]);
     gulp.watch("src/img/*", ["images"]);
     gulp.watch("src/fonts/*", ["fonts"]);
-    gulp.watch("src/templates/*.pug", ["templates"]);
+    gulp.watch("src/templates/**/*.pug", ["templates"]);
+    gulp.watch("src/locals.json", ["templates"]);
     gulp.watch("app/*.html", ["bs-reload"]);
   }
 );
