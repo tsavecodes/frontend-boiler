@@ -9,6 +9,7 @@ html.no-js
     link(href='//www.google-analytics.com', rel='dns-prefetch')
     link(href='//ajax.googleapis.com', rel='dns-prefetch')
     link(href='static/css/style.min.css', rel='stylesheet')
+    link(rel="icon" href="/static/img/favicon.png")
   body
   
   block header
@@ -20,8 +21,7 @@ html.no-js
                     a(href=item.href) #{item.title}
 
     .content
-        .wrap
-            block content
+        block content
 
     block footer
         footer.footer
@@ -39,6 +39,7 @@ html.no-js
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create',#{gaID});ga('send','pageview');
+            ga('create','#{gaID}');
+            ga('send','pageview');
     
     
